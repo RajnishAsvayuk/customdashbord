@@ -1,7 +1,7 @@
 @font-face {
     font-family: feather;
-    src: url(../fonts/feather.eot?oz8w89);
-    src: url(../fonts/feather.eot?oz8w89#iefix) format("embedded-opentype"), url(../fonts/feather.ttf?oz8w89) format("truetype"), url(../fonts/feather.woff?oz8w89) format("woff"), url(../fonts/feather.svg?oz8w89#feather) format("svg");
+    src: url(../fonts/feather.ttf);
+    src: url(../fonts/feather.ttf) format("truetype"), url(../fonts/feather.ttf) format("truetype"), url(../fonts/feather.ttf) format("truetype"), url(../fonts/feather.svg) format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: block
