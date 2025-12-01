@@ -10,7 +10,7 @@
     <meta name="author" content="WRAPCODERS">
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Duralux || Customers</title>
+    <title>Duralux || Invoice View</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -20,9 +20,6 @@
     <!--! END: Bootstrap CSS-->
     <!--! BEGIN: Vendors CSS-->
     <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/dataTables.bs5.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2-theme.min.css">
     <!--! END: Vendors CSS-->
     <!--! BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css">
@@ -49,7 +46,7 @@
                 </a>
             </div>
             <div class="navbar-content">
-               <ul class="nxl-navbar">
+                <ul class="nxl-navbar">
                     <li class="nxl-item nxl-caption">
                         <label>Navigation</label>
                     </li>
@@ -60,10 +57,59 @@
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="index.html">CRM</a></li>
-                            <!-- <li class="nxl-item"><a class="nxl-link" href="analytics.html">Analytics</a></li> -->
+                            <li class="nxl-item"><a class="nxl-link" href="analytics.html">Analytics</a></li>
                         </ul>
                     </li>
-                     <li class="nxl-item nxl-hasmenu">
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-cast"></i></span>
+                            <span class="nxl-mtext">Reports</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="reports-sales.html">Sales Report</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="reports-leads.html">Leads Report</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="reports-project.html">Project Report</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="reports-timesheets.html">Timesheets Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-send"></i></span>
+                            <span class="nxl-mtext">Applications</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Chat</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-email.html">Email</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-tasks.html">Tasks</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-notes.html">Notes</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-storage.html">Storage</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="apps-calendar.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-at-sign"></i></span>
+                            <span class="nxl-mtext">Proposal</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="proposal.html">Proposal</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="proposal-view.html">Proposal View</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="proposal-edit.html">Proposal Edit</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="proposal-create.html">Proposal Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-dollar-sign"></i></span>
+                            <span class="nxl-mtext">Payment</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="payment.html">Payment</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Invoice View</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="invoice-create.html">Invoice Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-users"></i></span>
                             <span class="nxl-mtext">Customers</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
@@ -74,18 +120,150 @@
                             <li class="nxl-item"><a class="nxl-link" href="customers-create.html">Customers Create</a></li>
                         </ul>
                     </li>
-                     <li class="nxl-item nxl-hasmenu">
+                    <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-users"></i></span>
-                            <span class="nxl-mtext">Products</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                            <span class="nxl-micon"><i class="feather-alert-circle"></i></span>
+                            <span class="nxl-mtext">Leads</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="products.html">Total Products</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="products-view.html">Products View</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="products-create.html">Products Create</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="leads.html">Leads</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="leads-view.html">Leads View</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="leads-create.html">Leads Create</a></li>
                         </ul>
                     </li>
-                     
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-briefcase"></i></span>
+                            <span class="nxl-mtext">Projects</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="projects.html">Projects</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="projects-view.html">Projects View</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="projects-create.html">Projects Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-layout"></i></span>
+                            <span class="nxl-mtext">Widgets</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="widgets-lists.html">Lists</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="widgets-tables.html">Tables</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="widgets-charts.html">Charts</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="widgets-statistics.html">Statistics</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="widgets-miscellaneous.html">Miscellaneous</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-settings"></i></span>
+                            <span class="nxl-mtext">Settings</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="settings-general.html">General</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-seo.html">SEO</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-tags.html">Tags</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-email.html">Email</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-tasks.html">Tasks</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-leads.html">Leads</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-support.html">Support</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-finance.html">Finance</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-gateways.html">Gateways</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-customers.html">Customers</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-localization.html">Localization</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-recaptcha.html">reCAPTCHA</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="settings-miscellaneous.html">Miscellaneous</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-power"></i></span>
+                            <span class="nxl-mtext">Authentication</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-mtext">Login</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-login-cover.html">Cover</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-login-minimal.html">Minimal</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-login-creative.html">Creative</a></li>
+                                </ul>
+                            </li>
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-mtext">Register</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-register-cover.html">Cover</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-register-minimal.html">Minimal</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-register-creative.html">Creative</a></li>
+                                </ul>
+                            </li>
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-mtext">Error-404</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-404-cover.html">Cover</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-404-minimal.html">Minimal</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-404-creative.html">Creative</a></li>
+                                </ul>
+                            </li>
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-mtext">Reset Pass</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-reset-cover.html">Cover</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-reset-minimal.html">Minimal</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-reset-creative.html">Creative</a></li>
+                                </ul>
+                            </li>
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-mtext">Verify OTP</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-verify-cover.html">Cover</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-verify-minimal.html">Minimal</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-verify-creative.html">Creative</a></li>
+                                </ul>
+                            </li>
+                            <li class="nxl-item nxl-hasmenu">
+                                <a href="javascript:void(0);" class="nxl-link">
+                                    <span class="nxl-mtext">Maintenance</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                                </a>
+                                <ul class="nxl-submenu">
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-maintenance-cover.html">Cover</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-maintenance-minimal.html">Minimal</a></li>
+                                    <li class="nxl-item"><a class="nxl-link" href="auth-maintenance-creative.html">Creative</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-life-buoy"></i></span>
+                            <span class="nxl-mtext">Help Center</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="#/">Support</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="help-knowledgebase.html">KnowledgeBase</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href=".docs/documentations.html">Documentations</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="feather-sunrise fs-4 text-dark"></i>
+                        <h6 class="mt-4 text-dark fw-bolder">Downloading Center</h6>
+                        <p class="fs-11 my-3 text-dark">Duralux is a production ready CRM to get started up and running easily.</p>
+                        <a href="javascript:void(0);" class="btn btn-primary text-dark w-100">Download Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -2085,11 +2263,11 @@
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">Customers</h5>
+                        <h5 class="m-b-10">Invoice</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Customers</li>
+                        <li class="breadcrumb-item">View</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -2114,28 +2292,41 @@
                                         <span>All</span>
                                     </a>
                                     <a href="javascript:void(0);" class="dropdown-item">
-                                        <i class="feather-users me-3"></i>
-                                        <span>Group</span>
+                                        <i class="feather-send me-3"></i>
+                                        <span>Sent</span>
                                     </a>
                                     <a href="javascript:void(0);" class="dropdown-item">
-                                        <i class="feather-flag me-3"></i>
-                                        <span>Country</span>
+                                        <i class="feather-book-open me-3"></i>
+                                        <span>Open</span>
                                     </a>
                                     <a href="javascript:void(0);" class="dropdown-item">
-                                        <i class="feather-dollar-sign me-3"></i>
-                                        <span>Invoice</span>
+                                        <i class="feather-archive me-3"></i>
+                                        <span>Draft</span>
                                     </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-bell me-3"></i>
+                                        <span>Revised</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-shield-off me-3"></i>
+                                        <span>Declined</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-check me-3"></i>
+                                        <span>Accepted</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
                                     <a href="javascript:void(0);" class="dropdown-item">
                                         <i class="feather-briefcase me-3"></i>
-                                        <span>Project</span>
+                                        <span>Leads</span>
                                     </a>
                                     <a href="javascript:void(0);" class="dropdown-item">
-                                        <i class="feather-user-check me-3"></i>
-                                        <span>Active</span>
+                                        <i class="feather-wifi-off me-3"></i>
+                                        <span>Expired</span>
                                     </a>
                                     <a href="javascript:void(0);" class="dropdown-item">
-                                        <i class="feather-user-minus me-3"></i>
-                                        <span>Inactive</span>
+                                        <i class="feather-users me-3"></i>
+                                        <span>Customers</span>
                                     </a>
                                 </div>
                             </div>
@@ -2171,9 +2362,9 @@
                                     </a>
                                 </div>
                             </div>
-                            <a href="customers-create.html" class="btn btn-primary">
+                            <a href="invoice-create.html" class="btn btn-primary">
                                 <i class="feather-plus me-2"></i>
-                                <span>Create Customer</span>
+                                <span>Create Invoice</span>
                             </a>
                         </div>
                     </div>
@@ -2187,19 +2378,14 @@
             <div id="collapseOne" class="accordion-collapse collapse page-header-collapse">
                 <div class="accordion-body pb-2">
                     <div class="row">
-                        <div class="col-xxl-3 col-md-6">
+                        <div class="col-lg-3">
                             <div class="card stretch stretch-full">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div class="avatar-text avatar-xl rounded">
-                                                <i class="feather-users"></i>
-                                            </div>
-                                            <a href="javascript:void(0);" class="fw-bold d-block">
-                                                <span class="text-truncate-1-line">Total Customers</span>
-                                                <span class="fs-24 fw-bolder d-block">26,595</span>
-                                            </a>
-                                        </div>
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Paid</span>
+                                            <span class="fs-20 fw-bold d-block">78/100</span>
+                                        </a>
                                         <div class="badge bg-soft-success text-success">
                                             <i class="feather-arrow-up fs-10 me-1"></i>
                                             <span>36.85%</span>
@@ -2208,64 +2394,49 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-md-6">
+                        <div class="col-lg-3">
                             <div class="card stretch stretch-full">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div class="avatar-text avatar-xl rounded">
-                                                <i class="feather-user-check"></i>
-                                            </div>
-                                            <a href="javascript:void(0);" class="fw-bold d-block">
-                                                <span class="text-truncate-1-line">Active Customers</span>
-                                                <span class="fs-24 fw-bolder d-block">2,245</span>
-                                            </a>
-                                        </div>
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Unpaid</span>
+                                            <span class="fs-20 fw-bold d-block">38/50</span>
+                                        </a>
                                         <div class="badge bg-soft-danger text-danger">
                                             <i class="feather-arrow-down fs-10 me-1"></i>
-                                            <span>24.56%</span>
+                                            <span>23.45%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-md-6">
+                        <div class="col-lg-3">
                             <div class="card stretch stretch-full">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div class="avatar-text avatar-xl rounded">
-                                                <i class="feather-user-plus"></i>
-                                            </div>
-                                            <a href="javascript:void(0);" class="fw-bold d-block">
-                                                <span class="text-truncate-1-line">New Customers</span>
-                                                <span class="fs-24 fw-bolder d-block">1,254</span>
-                                            </a>
-                                        </div>
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Overdue</span>
+                                            <span class="fs-20 fw-bold d-block">15/30</span>
+                                        </a>
                                         <div class="badge bg-soft-success text-success">
                                             <i class="feather-arrow-up fs-10 me-1"></i>
-                                            <span>33.29%</span>
+                                            <span>25.44%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-md-6">
+                        <div class="col-lg-3">
                             <div class="card stretch stretch-full">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div class="avatar-text avatar-xl rounded">
-                                                <i class="feather-user-minus"></i>
-                                            </div>
-                                            <a href="javascript:void(0);" class="fw-bold d-block">
-                                                <span class="text-truncate-1-line">Inactive Customers</span>
-                                                <span class="fs-24 fw-bolder d-block">4,586</span>
-                                            </a>
-                                        </div>
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Draft</span>
+                                            <span class="fs-20 fw-bold d-block">3/10</span>
+                                        </a>
                                         <div class="badge bg-soft-danger text-danger">
                                             <i class="feather-arrow-down fs-10 me-1"></i>
-                                            <span>42.47%</span>
+                                            <span>12.68%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -2276,995 +2447,246 @@
             </div>
             <!-- [ page-header ] end -->
             <!-- [ Main Content ] start -->
-            <div class="main-content">
+            <div class="main-content container-lg">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card stretch stretch-full">
+                        <div class="card invoice-container">
+                            <div class="card-header">
+                                <div>
+                                    <h2 class="fs-16 fw-700 text-truncate-1-line mb-0 mb-sm-1">Invoice Preview</h2>
+                                    <div class="dropdown d-none d-sm-block">
+                                        <a href="javascript:void(0)" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" data-bs-offset="0,25" aria-expanded="false">
+                                            <span class="fs-11 fw-400 text-muted me-2">Invoice Templates</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item active">Default</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Simple</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Classic</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Modern</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Untimate</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Essential</a>
+                                            </li>
+                                            <li class="dropdown-divider"></li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Create Template</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="dropdown-item">Delete Template</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="javascript:void(0)" class="d-flex me-1" data-alert-target="invoicSendMessage">
+                                        <div class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Send Invoice">
+                                            <i class="feather feather-send"></i>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex me-1 printBTN">
+                                        <div class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Print Invoice"><i class="feather feather-printer"></i></div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex me-1">
+                                        <div class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Add Payment"><i class="feather feather-dollar-sign"></i></div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex me-1 file-download">
+                                        <div class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Download Invoice"><i class="feather feather-download"></i></div>
+                                    </a>
+                                    <a href="invoice-create.html" class="d-flex me-1">
+                                        <div class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Edit Invoice">
+                                            <i class="feather feather-edit"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                             <div class="card-body p-0">
+                                <div class="px-4 pt-4">
+                                    <div class="d-sm-flex align-items-center justify-content-between">
+                                        <div>
+                                            <div class="fs-24 fw-bolder font-montserrat-alt text-uppercase">Duralux</div>
+                                            <address class="text-muted">
+                                                P.O. Box 18728,<br>
+                                                DeLorean New York<br>
+                                                VAT No: 2617 348 2752
+                                            </address>
+                                            <div class="d-flex gap-2">
+                                                <a href="javascript:void(0);" class="avatar-text avatar-sm">
+                                                    <i class="feather-facebook"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="avatar-text avatar-sm">
+                                                    <i class="feather-twitter"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="avatar-text avatar-sm">
+                                                    <i class="feather-instagram"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="avatar-text avatar-sm">
+                                                    <i class="feather-linkedin"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="avatar-text avatar-sm">
+                                                    <i class="feather-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="lh-lg pt-3 pt-sm-0">
+                                            <h2 class="fs-4 fw-bold text-primary">Invoice</h2>
+                                            <div>
+                                                <span class="fw-bold text-dark">Invoice:</span>
+                                                <span class="fw-bold text-primary">#NXL369852</span>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-dark">Due Date:</span>
+                                                <span class="text-muted">28 Feb, 2023</span>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-dark">Issued Date:</span>
+                                                <span class="text-muted">25 JAN, 2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-dashed">
+                                <div class="px-4 py-sm-5">
+                                    <div class="d-sm-flex gap-4 justify-content-center">
+                                        <div class="text-sm-end">
+                                            <h2 class="fs-16 fw-bold text-dark mb-3">Invoiced To:</h2>
+                                            <address class="text-muted lh-lg">
+                                                Ellen Louise Ripley<br>
+                                                Nostromo PO Box 29618<br>
+                                                VAT No: 295 3932 6119<br>
+                                                United Kingdom
+                                            </address>
+                                        </div>
+                                        <div class="border-end border-end-dashed border-gray-500 d-none d-sm-block"></div>
+                                        <div class="mt-4 mt-sm-0">
+                                            <h2 class="fs-16 fw-bold text-dark mb-3">Payment Details:</h2>
+                                            <div class="text-muted lh-lg">
+                                                <div>
+                                                    <span class="text-muted">Total Due:</span>
+                                                    <span class="fw-bold text-dark">$249 USD</span>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted">Payout Status:</span>
+                                                    <span class="fw-bold text-warning">Pending</span>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted">Card Holder:</span>
+                                                    <span class="fw-bold text-dark">Alexandra Della</span>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted">Payment Method:</span>
+                                                    <span class="fw-bold text-dark">Mastercard</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-dashed mb-0">
                                 <div class="table-responsive">
-                                    <table class="table table-hover" id="customerList">
+                                    <table class="table">
                                         <thead>
                                             <tr>
-                                                <th class="wd-30">
-                                                    <div class="btn-group mb-1">
-                                                        <div class="custom-control custom-checkbox ms-1">
-                                                            <input type="checkbox" class="custom-control-input" id="checkAllCustomer">
-                                                            <label class="custom-control-label" for="checkAllCustomer"></label>
-                                                        </div>
-                                                    </div>
-                                                </th>
-                                                <th>Customer</th>
-                                                <th>Email</th>
-                                                <th>Group</th>
-                                                <th>Phone</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th class="text-end">Actions</th>
+                                                <th>Service</th>
+                                                <th>Description</th>
+                                                <th>Rate</th>
+                                                <th>QTY</th>
+                                                <th>Amount</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_1">
-                                                            <label class="custom-control-label" for="checkBox_1"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md">
-                                                            <img src="assets/images/avatar/1.png" alt="" class="img-fluid">
-                                                        </div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Alexandra Della</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">alex.della@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success">Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal" selected>High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:">+1 (375) 9632 548</a></td>
-                                                <td>2023-04-05, 00:05PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td><a href="javascript:void(0)">Adata </a></td>
+                                                <td>Modern &amp; Minimal Multipurpose Bootstrap Admin Dashboard</td>
+                                                <td>$50.00</td>
+                                                <td>10</td>
+                                                <td class="text-dark fw-semibold">$500.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_2">
-                                                            <label class="custom-control-label" for="checkBox_2"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md bg-warning text-white">N</div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Nancy Elliot</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">nancy.elliot@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success">Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary" selected>Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (375) 8523 456</a></td>
-                                                <td>2023-04-06, 02:52PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td><a href="javascript:void(0)">Avesta </a></td>
+                                                <td>Multipurpose Bootstrap4 Admin Dashboard Template</td>
+                                                <td>$120.00</td>
+                                                <td>10</td>
+                                                <td class="text-dark fw-semibold">$1200.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_3">
-                                                            <label class="custom-control-label" for="checkBox_3"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md">
-                                                            <img src="assets/images/avatar/2.png" alt="" class="img-fluid">
-                                                        </div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Green Cute</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">green.cute@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success">Updates</option>
-                                                        <option value="warning" data-bg="bg-warning" selected>Personal</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (845) 9632 874</a></td>
-                                                <td>2023-04-08, 08:34PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td><a href="javascript:void(0)">Metrical </a></td>
+                                                <td>Multipurpose Bootstrap4 Admin Dashboard Template</td>
+                                                <td>$450.00</td>
+                                                <td>1</td>
+                                                <td class="text-dark fw-semibold">$450.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_4">
-                                                            <label class="custom-control-label" for="checkBox_4"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md bg-teal text-white">H</div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Henry Leach</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">henry.leach@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal" selected>Primary</option>
-                                                        <option value="success" data-bg="bg-success" selected>Updates</option>
-                                                        <option value="warning" data-bg="bg-warning" selected>Personal</option>
-                                                        <option value="danger" data-bg="bg-danger">Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (258) 9514 657</a></td>
-                                                <td>2023-04-10, 05:25PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success">Active</option>
-                                                        <option value="warning" data-bg="bg-warning" selected>Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td><a href="javascript:void(0)">Avesta </a></td>
+                                                <td>Multipurpose Bootstrap4 Admin Dashboard Template</td>
+                                                <td>$120.00</td>
+                                                <td>10</td>
+                                                <td class="text-dark fw-semibold">$1200.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_5">
-                                                            <label class="custom-control-label" for="checkBox_5"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md">
-                                                            <img src="assets/images/avatar/3.png" alt="" class="img-fluid">
-                                                        </div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Marianne Audrey</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">marine.adrey@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary" selected>Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success" selected>Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger">Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (456) 6547 524</a></td>
-                                                <td>2023-04-12, 12:02PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td><a href="javascript:void(0)">Duralux </a></td>
+                                                <td>Admin Dashboard &amp; Webapps Template</td>
+                                                <td>$50.00</td>
+                                                <td>10</td>
+                                                <td class="text-dark fw-semibold">$500.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_6">
-                                                            <label class="custom-control-label" for="checkBox_6"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md bg-warning text-white">N</div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Nancy Elliot</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">nancy.elliot@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info" selected>Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary" selected>Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success" selected>Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger">Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (375) 8523 456</a></td>
-                                                <td>2023-04-15, 02:40PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                                <td class="fw-semibold text-dark bg-gray-100 text-lg-end">Sub Total</td>
+                                                <td class="fw-bold text-dark bg-gray-100">+ $2150.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_7">
-                                                            <label class="custom-control-label" for="checkBox_7"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md">
-                                                            <img src="assets/images/avatar/4.png" alt="" class="img-fluid">
-                                                        </div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Cute Green</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">cute.green@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success" selected>VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success">Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary" selected>Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (632) 5486 662</a></td>
-                                                <td>2023-04-25, 03:42PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                                <td class="fw-semibold text-dark bg-gray-100 text-lg-end">Discount (NXL2023 - 15%)</td>
+                                                <td class="fw-bold text-success bg-gray-100">- $567.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_8">
-                                                            <label class="custom-control-label" for="checkBox_8"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md bg-success text-white">H</div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Leach Henry</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">leach.henry@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success" selected>VIP</option>
-                                                        <option value="info" data-bg="bg-info" selected>Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success">Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger">Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger">Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (951) 5478 884</a></td>
-                                                <td>2023-04-14, 03:32PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                                <td class="fw-semibold text-dark bg-gray-100 text-lg-end">Estimated Tax (12.5%)</td>
+                                                <td class="fw-bold text-dark bg-gray-100">+ $225.00</td>
                                             </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_9">
-                                                            <label class="custom-control-label" for="checkBox_9"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md">
-                                                            <img src="assets/images/avatar/5.png" alt="" class="img-fluid">
-                                                        </div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Audrey Marianne</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">adrey.marine@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info" selected>Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success" selected>Updates</option>
-                                                        <option value="warning" data-bg="bg-warning">Personal</option>
-                                                        <option value="danger" data-bg="bg-danger">Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (556) 2457 586</a></td>
-                                                <td>2023-04-20, 01:47PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success">Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <td>
-                                                    <div class="item-checkbox ms-1">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_10">
-                                                            <label class="custom-control-label" for="checkBox_10"></label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="customers-view.html" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md bg-primary text-white">E</div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Elliot Nancy</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td><a href="apps-email.html">elliot.nancy@outlook.com</a></td>
-                                                <td>
-                                                    <select class="form-select form-control max-select" data-select2-selector="tag" data-max-select2="tag" multiple>
-                                                        <option value="success" data-bg="bg-success">VIP</option>
-                                                        <option value="info" data-bg="bg-info">Bugs</option>
-                                                        <option value="primary" data-bg="bg-primary">Team</option>
-                                                        <option value="teal" data-bg="bg-teal">Primary</option>
-                                                        <option value="success" data-bg="bg-success">Updates</option>
-                                                        <option value="warning" data-bg="bg-warning" selected>Personal</option>
-                                                        <option value="danger" data-bg="bg-danger">Promotions</option>
-                                                        <option value="indigo" data-bg="bg-indigo">Customs</option>
-                                                        <option value="primary" data-bg="bg-primary">Wholesale</option>
-                                                        <option value="danger" data-bg="bg-danger" selected>Low Budget</option>
-                                                        <option value="teal" data-bg="bg-teal">High Budget</option>
-                                                    </select>
-                                                </td>
-                                                <td><a href="tel:"> (554) 2478 663</a></td>
-                                                <td>2023-04-22, 02:12PM</td>
-                                                <td>
-                                                    <select class="form-control" data-select2-selector="status">
-                                                        <option value="success" data-bg="bg-success" selected>Active</option>
-                                                        <option value="warning" data-bg="bg-warning">Inactive</option>
-                                                        <option value="danger" data-bg="bg-danger">Declined</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                        <a href="customers-view.html" class="avatar-text avatar-md">
-                                                            <i class="feather feather-eye"></i>
-                                                        </a>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                                <i class="feather feather-more-horizontal"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-edit-3 me-3"></i>
-                                                                        <span>Edit</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item printBTN" href="javascript:void(0)">
-                                                                        <i class="feather feather-printer me-3"></i>
-                                                                        <span>Print</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-clock me-3"></i>
-                                                                        <span>Remind</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-archive me-3"></i>
-                                                                        <span>Archive</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-alert-octagon me-3"></i>
-                                                                        <span>Report Spam</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="dropdown-divider"></li>
-                                                                <li>
-                                                                    <a class="dropdown-item" href="javascript:void(0)">
-                                                                        <i class="feather feather-trash-2 me-3"></i>
-                                                                        <span>Delete</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                                <td class="fw-semibold text-dark bg-gray-100 text-lg-end">Grand Amount</td>
+                                                <td class="fw-bolder text-dark bg-gray-100">= $2065.00</td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                                <hr class="border-dashed mt-0">
+                                <div class="px-4">
+                                    <div class="alert alert-dismissible p-4 mt-3 alert-soft-warning-message" role="alert">
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <p class="mb-0">
+                                            <strong>NOTES:</strong> All accounts are to be paid within 7 days from receipt of invoice. <br>
+                                            To be paid by cheque or credit card or direct payment online. <br>
+                                            If account is not paid within 7 days the credits details supplied as confirmation of work undertaken will be charged the agreed quoted fee noted above.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-4 pt-4 d-sm-flex align-items-center justify-content-between">
+                                    <div class="mb-5 mb-sm-0">
+                                        <h6 class="fs-13 fw-bold mb-3">Tarm &amp; Condition :</h6>
+                                        <ul class="list-unstyled lh-lg fs-12">
+                                            <li># All accounts are to be paid within 7 days from receipt of invoice.</li>
+                                            <li># To be paid by cheque or credit card or direct payment online.</li>
+                                            <li># If account is not paid within 7 days the credits details supplied as confirmation.</li>
+                                            <li># This is computer generated receipt and does not require physical signature.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="assets/images/general/signature.png" class="img-fluid wd-100" alt="image">
+                                        <h6 class="fs-13 fw-bold mt-2">Account Manager</h6>
+                                        <p class="fs-11 fw-semibold text-muted">26 MAY 2023, 10:35PM</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -3291,347 +2713,6 @@
     </main>
     <!--! ================================================================ !-->
     <!--! [End] Main Content !-->
-    <!--! ================================================================ !-->
-    <!--! ================================================================ !-->
-    <!--! [Start] Search Modal !-->
-    <!--! ================================================================ !-->
-    <div class="modal fade-scale" id="searchModal" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-top modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header search-form py-0">
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="feather-search fs-4 text-muted"></i>
-                        </span>
-                        <input type="text" class="form-control search-input-field" placeholder="Search...">
-                        <span class="input-group-text">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </span>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="searching-for mb-5">
-                        <h4 class="fs-13 fw-normal text-gray-600 mb-3">I'm searching for...</h4>
-                        <div class="row g-1">
-                            <div class="col-md-4 col-xl-2">
-                                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
-                                    <i class="feather-compass"></i>
-                                    <span>Recent</span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xl-2">
-                                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
-                                    <i class="feather-command"></i>
-                                    <span>Command</span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xl-2">
-                                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
-                                    <i class="feather-users"></i>
-                                    <span>Peoples</span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xl-2">
-                                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
-                                    <i class="feather-file"></i>
-                                    <span>Files</span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xl-2">
-                                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
-                                    <i class="feather-video"></i>
-                                    <span>Medias</span>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xl-2">
-                                <a href="javascript:void(0);" class="d-flex align-items-center gap-2 px-3 lh-lg border rounded-pill">
-                                    <span>More</span>
-                                    <i class="feather-chevron-down"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recent-result mb-5">
-                        <h4 class="fs-13 fw-normal text-gray-600 mb-3">Recnet <span class="badge small bg-gray-200 rounded ms-1 text-dark">3</span></h4>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-airplay fs-5"></i>
-                                <div class="fs-13 fw-semibold">CRM dashboard redesign</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">/<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-file-plus fs-5"></i>
-                                <div class="fs-13 fw-semibold">Create new eocument</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">N /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-user-plus fs-5"></i>
-                                <div class="fs-13 fw-semibold">Invite project colleagues</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">P /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                    </div>
-                    <div class="command-result mb-5">
-                        <h4 class="fs-13 fw-normal text-gray-600 mb-3">Command <span class="badge small bg-gray-200 rounded ms-1 text-dark">5</span></h4>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-user fs-5"></i>
-                                <div class="fs-13 fw-semibold">My profile</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">P /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-users fs-5"></i>
-                                <div class="fs-13 fw-semibold">Team profile</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">T /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-user-plus fs-5"></i>
-                                <div class="fs-13 fw-semibold">Invite colleagues</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">I /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-briefcase fs-5"></i>
-                                <div class="fs-13 fw-semibold">Create new project</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">CP /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-life-buoy fs-5"></i>
-                                <div class="fs-13 fw-semibold">Support center</div>
-                            </a>
-                            <a href="javascript:void(0);" class="badge border rounded text-dark">SC /<i class="feather-command ms-1 fs-12"></i></a>
-                        </div>
-                    </div>
-                    <div class="file-result mb-4">
-                        <h4 class="fs-13 fw-normal text-gray-600 mb-3">Files <span class="badge small bg-gray-200 rounded ms-1 text-dark">3</span></h4>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-folder-plus fs-5"></i>
-                                <div class="fs-13 fw-semibold">CRM Desing Project <span class="fs-12 fw-normal text-muted">(56.74 MB)</span></div>
-                            </a>
-                            <a href="javascript:void(0);" class="file-download"><i class="feather-download"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-folder-plus fs-5"></i>
-                                <div class="fs-13 fw-semibold">Admin Dashboard Project <span class="fs-12 fw-normal text-muted">(46.83 MB)</span></div>
-                            </a>
-                            <a href="javascript:void(0);" class="file-download"><i class="feather-download"></i></a>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <a href="javascript:void(0);" class="d-flex align-items-start gap-3">
-                                <i class="feather-folder-plus fs-5"></i>
-                                <div class="fs-13 fw-semibold">CRM Dashboard Project <span class="fs-12 fw-normal text-muted">(68.59 MB)</span></div>
-                            </a>
-                            <a href="javascript:void(0);" class="file-download"><i class="feather-download"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--! ================================================================ !-->
-    <!--! [End] Search Modal !-->
-    <!--! ================================================================ !-->
-    <!--! ================================================================ !-->
-    <!--! [Start] Language Select !-->
-    <!--! ================================================================ !-->
-    <div class="modal fade-scale" id="languageSelectModal" aria-hidden="true" aria-labelledby="languageSelectModalLabel" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="languageSelectModalLabel">Select Language</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/sa.svg" alt="" class="img-fluid"></div>
-                                <span>Arabic </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/bd.svg" alt="" class="img-fluid"></div>
-                                <span>Bengali </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/ch.svg" alt="" class="img-fluid"></div>
-                                <span>Chinese </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/hr.svg" alt="" class="img-fluid"></div>
-                                <span>Croatian </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/dk.svg" alt="" class="img-fluid"></div>
-                                <span>Danish </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/nl.svg" alt="" class="img-fluid"></div>
-                                <span>Dutch </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select active">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/us.svg" alt="" class="img-fluid"></div>
-                                <span>English </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/fi.svg" alt="" class="img-fluid"></div>
-                                <span>Filipino </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/fr.svg" alt="" class="img-fluid"></div>
-                                <span>French </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/de.svg" alt="" class="img-fluid"></div>
-                                <span>German </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/il.svg" alt="" class="img-fluid"></div>
-                                <span>Hebrew </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/in.svg" alt="" class="img-fluid"></div>
-                                <span>Hindi </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/id.svg" alt="" class="img-fluid"></div>
-                                <span>Indonesian </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/it.svg" alt="" class="img-fluid"></div>
-                                <span>Italian </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/jp.svg" alt="" class="img-fluid"></div>
-                                <span>Japanese </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/kr.svg" alt="" class="img-fluid"></div>
-                                <span>Korean </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/ir.svg" alt="" class="img-fluid"></div>
-                                <span>Persian </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/pt.svg" alt="" class="img-fluid"></div>
-                                <span>Portuguese </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/ru.svg" alt="" class="img-fluid"></div>
-                                <span>Russian </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/es.svg" alt="" class="img-fluid"></div>
-                                <span>Spanish </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/sv.svg" alt="" class="img-fluid"></div>
-                                <span>Swedish </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/tr.svg" alt="" class="img-fluid"></div>
-                                <span>Turkish </span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/pk.svg" alt="" class="img-fluid"></div>
-                                <span>Urdo</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 language_select">
-                            <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                <div class="avatar-image avatar-sm"><img src="assets/vendors/img/flags/1x1/vi.svg" alt="" class="img-fluid"></div>
-                                <span>Vietnamese</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--! ================================================================ !-->
-    <!--! [End] Language Select !-->
-    <!--! ================================================================ !-->
-    <!--! ================================================================ !-->
-    <!--! BEGIN: Downloading Toast !-->
-    <!--! ================================================================ !-->
-    <div class="position-fixed" style="right: 5px; bottom: 5px; z-index: 999999">
-        <div id="toast" class="toast bg-black hide" data-bs-delay="3000" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header px-3 bg-transparent d-flex align-items-center justify-content-between border-bottom border-light border-opacity-10">
-                <div class="text-white mb-0 mr-auto">Downloading...</div>
-                <a href="javascript:void(0)" class="ms-2 mb-1 close fw-normal" data-bs-dismiss="toast" aria-label="Close">
-                    <span class="text-white">&times;</span>
-                </a>
-            </div>
-            <div class="toast-body p-3 text-white">
-                <h6 class="fs-13 text-white">Project.zip</h6>
-                <span class="text-light fs-11">4.2mb of 5.5mb</span>
-            </div>
-            <div class="toast-footer p-3 pt-0 border-top border-light border-opacity-10">
-                <div class="progress mt-3" style="height: 5px">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated w-75 bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--! ================================================================ !-->
-    <!--! END: Downloading Toast !-->
     <!--! ================================================================ !-->
     <!--! ================================================================ !-->
     <!--! BEGIN: Theme Customizer !-->
@@ -3811,14 +2892,11 @@
     <!--! BEGIN: Vendors JS !-->
     <script src="assets/vendors/js/vendors.min.js"></script>
     <!-- vendors.min.js {always must need to be top} -->
-    <script src="assets/vendors/js/dataTables.min.js"></script>
-    <script src="assets/vendors/js/dataTables.bs5.min.js"></script>
-    <script src="assets/vendors/js/select2.min.js"></script>
-    <script src="assets/vendors/js/select2-active.min.js"></script>
+    <script src="assets/vendors/js/jquery.print.min.js"></script>
     <!--! END: Vendors JS !-->
     <!--! BEGIN: Apps Init  !-->
     <script src="assets/js/common-init.min.js"></script>
-    <script src="assets/js/customers-init.min.js"></script>
+    <script src="assets/js/invoice-view-init.min.js"></script>
     <!--! END: Apps Init !-->
     <!--! BEGIN: Theme Customizer  !-->
     <script src="assets/js/theme-customizer-init.min.js"></script>
