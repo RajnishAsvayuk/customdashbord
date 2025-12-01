@@ -1,0 +1,1 @@
+chrome-extension://ljfoeinjpaedjfecbmggjgodbgkmjkjk/scripts/disable-console.js

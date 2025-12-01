@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / Dist folders
+dist/
+build/
+out/
+.serve/
+
+# Dependencies / package files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Temporary or cache files
+*.cache
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+*.env
+
+# Editor folders
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+
+# Others
+*.zip
+*.tar
